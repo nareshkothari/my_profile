@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naresh Kothari - Profile</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
       color: #333;
     }
+
     header {
       background-color: #0077cc;
       color: white;
@@ -20,9 +22,11 @@
       justify-content: space-between;
       align-items: center;
     }
+
     .profile-info {
       text-align: left;
     }
+
     .profile-photo {
       width: 120px;
       height: 120px;
@@ -30,6 +34,7 @@
       object-fit: cover;
       border: 2px solid white;
     }
+
     section {
       padding: 40px 20px;
       max-width: 800px;
@@ -38,20 +43,32 @@
       margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
     h2 {
       color: #0077cc;
       margin-bottom: 10px;
       border-bottom: 2px solid #0077cc;
       display: inline-block;
     }
+
+    p, ul li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
     ul {
       list-style-type: none;
       padding-left: 0;
     }
+
     ul li {
       margin-bottom: 8px;
     }
-    /* Project card styling */
+
+    .skill-title {
+      font-weight: bold;
+    }
+
     .project {
       margin-bottom: 20px;
       padding: 15px;
@@ -59,95 +76,105 @@
       border-radius: 4px;
       background-color: #fafafa;
     }
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 15px 0;
     }
+
     a {
       color: #0077cc;
       text-decoration: none;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="profile-info">
-      <h1>Naresh Kothari</h1>
-      <p>Automotive Validation Engineer</p>
-    </div>
-    <img src="1743611254531.jpg" alt="Profile Photo" class="profile-photo">
-  </header>
 
-  <section id="about">
-    <h2>Professional Summary</h2>
-    <p>Detail-oriented Automotive Test Engineer with 3 years of experience in validating ADAS and ECU functionalities. Skilled in requirement analysis, HIL testing, defect tracking, and test automation using Python and CAPL, along with automated report generation. Experienced in improving system reliability and performance through structured testing and automation solutions.</p>
-  </section>
-  
-  <section id="skills">
-    <h2>Skills</h2>
+<header>
+  <div class="profile-info">
+    <h1>Naresh Kothari</h1>
+    <p>Automotive Validation Engineer</p>
+  </div>
+  <img src="1743611254531.jpg" alt="Profile Photo" class="profile-photo">
+</header>
+
+<section id="about">
+  <h2>Professional Summary</h2>
+  <p>
+    Detail-oriented Automotive Test Engineer with 3 years of experience in validating ADAS and ECU functionalities.
+    Skilled in requirement analysis, HIL testing, defect tracking, and test automation using Python and CAPL,
+    along with automated report generation. Experienced in improving system reliability and performance
+    through structured testing and automation solutions.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li><span class="skill-title">Testing & Validation:</span> Detection Testing, HMI Testing, Calibration Testing, Diagnostics, Failsafe Testing, Regression & Functional Testing, HIL Testing, Manual & Automation Testing</li>
+    <li><span class="skill-title">Methodologies:</span> STLC, SDLC, V-Model</li>
+    <li><span class="skill-title">Automotive Protocols:</span> CAN, LIN, UDS</li>
+    <li><span class="skill-title">Programming & Scripting:</span> Python, CAPL, C</li>
+    <li><span class="skill-title">Automation & Tools:</span> Pytest, Jenkins, CANoe, Automation Desk, ADTF, MITE</li>
+    <li><span class="skill-title">ALM / Platforms:</span> Windchill (ALM), Git (Basics)</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <p><strong>Magna Electronics (via Navtech Electronics)</strong><br>
+     System Test Engineer | Duration: 2 years
+  </p>
+  <ul>
+    <li>Currently working on the MAZDA SVS Project.</li>
+    <li>Contributing to detection features: Dirty Lens Detection (DLD), Pedestrian Detection (PD), Parking Line Detection (PLD).</li>
+    <li>Ensuring thorough validation of advanced camera-based systems through structured test methodologies.</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>MAZDA SVS Project</h3>
     <ul>
-      <li>Testing & Validation: Detection Testing, HMI Testing, Calibration Testing, Diagnostics, Failsafe Testing, Regression & Functional Testing, HIL Testing, Manual & Automation Testing</li>
-      <li>Methodologies: STLC, SDLC, V-Model</li>
-      <li>Automotive Protocols: CAN, LIN, UDS</li>
-      <li>Programming & Scripting: Python, CAPL, C</li>
-      <li>Automation & Tools: Pytest, Jenkins, CANoe, Automation Desk, ADTF, MITE</li>
-      <li>ALM / Platforms: Windchill (ALM), Git (Basics)</li>
+      <li><strong>Role:</strong> System Test Engineer</li>
+      <li><strong>Duration:</strong> Jan 2023 – Present</li>
+      <li><strong>Description:</strong> Lead test planning and execution for vision-based safety features (Dirty Lens Detection, Pedestrian Detection, Parking Line Detection).</li>
+      <li><strong>Tools & Technologies Used:</strong> Python, CAPL, Vector CANoe, ADTF, Methodica.</li>
+      <li><strong>Key Contributions:</strong>
+        <ul>
+          <li>Executed manual test cases to verify detection features across various environmental conditions.</li>
+          <li>Designed and implemented a Python script to automate HMI testing by interfacing with CANoe, capturing images, and performing image comparisons.</li>
+          <li>Collaborated with cross-functional teams to identify and resolve detection discrepancies.</li>
+          <li>Documented and tracked defects to resolution, ensuring release quality.</li>
+        </ul>
+      </li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <p><strong>Magna Electronics (via Navtech Electronics)</strong><br>
-    System Test Engineer | Duration: 2 years</p>
-    <ul>
-      <li>Currently working on the MAZDA SVS Project.</li>
-      <li>Contributing to detection features: Dirty Lens Detection (DLD), Pedestrian Detection (PD), Parking Line Detection (PLD).</li>
-      <li>Ensuring thorough validation of advanced camera-based systems through structured test methodologies.</li>
-    </ul>
-  </section>
+<section id="education">
+  <h2>Education</h2>
+  <p>
+    B.Tech in Electronics and Communication Engineering<br>
+    KKR & KSR Institute of Technology & Sciences | 2023
+  </p>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>MAZDA SVS Project</h3>
-      <ul>
-        <li><strong>Role:</strong> System Test Engineer</li>
-        <li><strong>Duration:</strong> Jan 2023 – Present</li>
-        <li><strong>Description:</strong> Lead test planning and execution for vision-based safety features (Dirty Lens Detection, Pedestrian Detection, Parking Line Detection).</li>
-        <li><strong>Tools & Technologies Used:</strong> Python, CAPL, Vector CANoe, ADTF, Methodica.</li>
-        <li><strong>Key Contributions:</strong>
-          <ul>
-            <li>Executed manual test cases to verify detection features across various environmental conditions.</li>
-            <li>Designed and implemented a Python script to automate HMI testing—interfacing with CANoe to set and check signals, capture images, and perform image comparisons.</li>
-            <li>Collaborated with cross-functional teams to identify and resolve detection discrepancies.</li>
-            <li>Documented and tracked defects to resolution, ensuring release quality.</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </section>
+<section id="contact">
+  <h2>Contact Info</h2>
+  <p>Email: <a href="mailto:nareshkothari789@gmail.com">nareshkothari789@gmail.com</a></p>
+  <p>Phone: 8465919347</p>
+  <p><a href="https://www.linkedin.com/in/naresh-kothari/" target="_blank">LinkedIn</a></p>
+  <p><a href="Naresh_Kothari_Resume.pdf" download>Download Resume (PDF)</a></p>
+</section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p>B.Tech in Electronics and Communication Engineering<br>
-       KKR & KSR Institute of Technology & Sciences | 2023</p>
-  </section>
+<footer>
+  <p>&copy; 2025 Naresh Kothari. All rights reserved.</p>
+</footer>
 
-  <section id="contact">
-    <h2>Contact Info</h2>
-    <p>Email: <a href="mailto:nareshkothari789@gmail.com">nareshkothari789@gmail.com</a></p>
-    <p>Ph no: 8465919347</p>
-    <p><a href="https://www.linkedin.com/in/naresh-kothari/" target="_blank">LinkedIn</a> </p>
-    <p><a href="Naresh_Kothari_Resume.pdf" download>Download Resume (PDF)</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Naresh Kothari. All rights reserved.</p>
-  </footer>
 </body>
 </html>
-
-
-
